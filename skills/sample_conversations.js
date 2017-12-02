@@ -11,12 +11,13 @@ through the conversation are chosen based on the user's response.
 
 module.exports = function(controller) {
 
-    controller.hears(['color'], 'direct_message,direct_mention', function(bot, message) {
+    controller.hears(['interest'], 'direct_message,direct_mention', function(bot, message) {
 
         bot.startConversation(message, function(err, convo) {
-            convo.say('This is an example of using convo.ask with a single callback.');
-
-            convo.ask('What is your favorite color?', function(response, convo) {
+            //convo.say('This is an example of using convo.ask with a single callback.');
+            convo.say('Respond with the number of the area you are interested in: ');
+            convo.say("1: 3D Printing \n2: Laser Cutting\n3: Woodworking.");
+            convo.ask('What is your interest', function(response, convo) {
 
                 convo.say('Cool, we hate ' + response.text + ' too!');
                 convo.next();
