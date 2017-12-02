@@ -14,7 +14,7 @@ module.exports = function(controller) {
         // do some preparation before the conversation starts...
         // for example, set variables to be used in the message templates
         // convo.setVar('foo','bar');
-        convo.setVar()
+        convo.setVar('name', 'interest');
 
         console.log('BEFORE: Interest Indicator');
         // don't forget to call next, or your conversation will never continue.
@@ -41,7 +41,7 @@ module.exports = function(controller) {
         next();
 
     });
-
+/*
     // Validate user input: question_2
     controller.studio.validate('Interest Indicator','question_2', function(convo, next) {
 
@@ -71,7 +71,8 @@ module.exports = function(controller) {
         next();
 
     });
-
+*/
+  
     /* Thread Hooks */
     // Hook functions in-between threads with beforeThread
     // See: https://github.com/howdyai/botkit/blob/master/docs/readme-studio.md#controllerstudiobeforethread
