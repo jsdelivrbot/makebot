@@ -11,45 +11,20 @@ through the conversation are chosen based on the user's response.
 
 module.exports = function(controller) {
 
-    controller.hears(['interest'], 'direct_message,direct_mention', function(bot, message) {
+    controller.hears(['color'], 'direct_message,direct_mention', function(bot, message) {
 
         bot.startConversation(message, function(err, convo) {
-            //convo.say('This is an example of using convo.ask with a single callback.');
-            
-                convo.say('Cool, we hate ' + response.text + ' too!');
+            convo.say('This is an example of using convo.ask with a single callback.');
+
+            convo.ask('What is your favorite color?', function(response, convo) {
+
+                convo.say('Cool, I like ' + response.text + ' too!');
                 convo.next();
 
             });
         });
 
     });
-  /*
-  controller.hears(['button simulate'], 'direct_message,direct_mention', function(bot,message) )
-  bot.reply(message, {
-  attachments:[
-    {
-      title: ‘Do you want to interact with my buttons?’,
-      callback_id: ‘123’,
-      attachment_type: ‘default’,
-      actions: [
-         {
-            “name”:”yes”,
-            “text”: “Yes”,
-            “value”: “yes”,
-            “type”: “button”,
-         },
-         {
-             “name”:”no”,
-             “text”: “No”,
-             “value”: “no”,
-             “type”: “button”,
-         }
-      ]
-    }
-  ]
-});
-  */
-  
 
 
     controller.hears(['question'], 'direct_message,direct_mention', function(bot, message) {
