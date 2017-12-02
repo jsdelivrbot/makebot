@@ -14,6 +14,7 @@ module.exports = function(controller) {
         // do some preparation before the conversation starts...
         // for example, set variables to be used in the message templates
         // convo.setVar('foo','bar');
+        convo.setVar()
 
         console.log('BEFORE: Interest Indicator');
         // don't forget to call next, or your conversation will never continue.
@@ -80,7 +81,7 @@ module.exports = function(controller) {
     controller.studio.beforeThread('Interest Indicator','default', function(convo, next) {
 
         /// do something fun and useful
-        // convo.setVar('name','value');
+        convo.setVar('name','value');
 
         console.log('In the script *Interest Indicator*, about to start the thread *default*');
 
@@ -92,7 +93,7 @@ module.exports = function(controller) {
     controller.studio.beforeThread('Interest Indicator','on_timeout', function(convo, next) {
 
         /// do something fun and useful
-        // convo.setVar('name','value');
+        convo.setVar('name','value');
 
         console.log('In the script *Interest Indicator*, about to start the thread *on_timeout*');
 
