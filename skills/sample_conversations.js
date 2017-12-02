@@ -15,10 +15,7 @@ module.exports = function(controller) {
 
         bot.startConversation(message, function(err, convo) {
             //convo.say('This is an example of using convo.ask with a single callback.');
-            convo.say('Respond with the number of the area you are interested in: ');
-            convo.say("1: 3D Printing \n2: Laser Cutting\n3: Woodworking.");
-            convo.ask('What is your interest', function(response, convo) {
-
+            
                 convo.say('Cool, we hate ' + response.text + ' too!');
                 convo.next();
 
@@ -26,6 +23,33 @@ module.exports = function(controller) {
         });
 
     });
+  /*
+  controller.hears(['button simulate'], 'direct_message,direct_mention', function(bot,message) )
+  bot.reply(message, {
+  attachments:[
+    {
+      title: ‘Do you want to interact with my buttons?’,
+      callback_id: ‘123’,
+      attachment_type: ‘default’,
+      actions: [
+         {
+            “name”:”yes”,
+            “text”: “Yes”,
+            “value”: “yes”,
+            “type”: “button”,
+         },
+         {
+             “name”:”no”,
+             “text”: “No”,
+             “value”: “no”,
+             “type”: “button”,
+         }
+      ]
+    }
+  ]
+});
+  */
+  
 
 
     controller.hears(['question'], 'direct_message,direct_mention', function(bot, message) {
