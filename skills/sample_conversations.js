@@ -18,7 +18,7 @@ module.exports = function(controller) {
 
             convo.ask('What is your favorite color?', function(response, convo) {
 
-                convo.say('Cool, I hate ' + response.text + ' too!');
+                convo.say('Cool, we hate ' + response.text + ' too!');
                 convo.next();
 
             });
