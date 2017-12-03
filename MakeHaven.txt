@@ -5,19 +5,21 @@
  */
  
  to do:
- fallback
  readme
  
  1. sequence of steps for use-only installation
  
- 2. To edit the MakeBot (in glitch) follow this link: 
+ 2. 
+    To edit the MakeBot (in glitch) follow this link: 
        https://glitch.com/edit/#!/join/181637a9-b6a8-49d8-a5a8-572eaea48cf8
        
-    To simply view the Makebot in glitch without editing access and ability to     view secret information in the .env file etc.:
+    To simply view the Makebot in glitch without editing access and ability to   view secret information in the .env file etc.:
        https://glitch.com/edit/#!/makebot
        
+    If either of these links seems to not be working, click the share button in  the upper-left hand corner of the glitch consol, and replace with the links  there, obtained by clicking the 'copy' button next to the desired link/link function.
+       
  
- 3. explain botkit scripts (mauricio) modify and call
+ 3. explain scripts
  
  4. explain left sidebar directories and files
  
