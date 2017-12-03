@@ -1,0 +1,19 @@
+/*
+ *
+ * THIS FILE CONTAINS ALL MAKEHAVEN SPECIFIC DOCUMENTATION
+ *
+ */
+ 
+ 1. sequence of steps for use-only installation
+ 
+ 2. steps for editing (botkit and glitch)
+ 
+ 3. explain botkit scripts (mauricio) modify and call
+ 
+ 4. explain left sidebar directories and files
+ 
+ 5. explain user process for makebot
+ 
+ 6. suggestions for optimization
+ 
+ 
