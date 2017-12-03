@@ -11,7 +11,14 @@ Authorization Link
  https://slack.com/oauth/authorize?client_id=280783240052.281964108791&scope=bot,channels:write,groups:write,im:write,channels:history,groups:history,im:history,mpim:history
  
  1. sequence of steps for use-only installation:
- Owner of a workspace must click on Authorization Link, approve MakeBot, and sign-in to his workspace. Once he sign-ins, he must select 'Manage Apps' from the top-left dropdown in Slack. After being redirected to an api.slack.com site, MakeBot will appear in the list of restricted apps. The owner must click the approve button in the MakeBot entry
+ Owner of a workspace will first receive the Authroization Link. He/she must click on Authorization Link, approve MakeBot, and sign-in to his workspace. Once he sign-ins, he must select 'Manage Apps' from the top-left dropdown in Slack. After being redirected to an api.slack.com site, MakeBot will appear in the list of restricted apps. The owner must click the approve button in the MakeBot entry. He must then return to his workspace. 
+ 
+ Now the owner (and only the owner) can direct message MakeBot in his workspace. We recommend starting off by typing 'help' to see a list of common operations. 
+ 
+ To allow other users in his workspace to access MakeBot, the other users must
+ be provided with the same authorization link. Once a user has clicked on the authorization link, approved MakeBot, and re-signed into his/her workspace, he/she will be able to direct message MakeBot. 
+ 
+ 
  
  2. 
     To edit the MakeBot (in glitch) follow this link: 
@@ -23,16 +30,43 @@ Authorization Link
     If either of these links seems to not be working, click the share button in  the upper-left hand corner of the glitch consol, and replace with the links  there, obtained by clicking the 'copy' button next to the desired link/link function.
        
  
- 3. The left-hand sidebar of the Glitch workspace has a scroll-able list of files and directories pertaining to the MakeBot. The following is a list of files that you will likely not need to change unless you are doing in-depth restructuring or reformatting of the code/workspace. (In that case we recommend learning how to do that with a reputable source)
+ 3. The left-hand sidebar of the Glitch workspace has a scroll-able list of files and directories pertaining to the MakeBot. The following is a list of files that you will likely not need to change unless you are doing more in-depth restructuring or reformatting of the code/workspace (In this case we recommend first learning how to do that with a reputable source).
  
-   - All items beginning: /components
-   - All items beginning: /public
-   - All items beginning: /docs
-   -
+   - All items beginning: components/
+   - All items beginning: public/
+   - All items beginning: docs/
+   - All items beginning: sass/
+   - All items beginning: views/
+   - .gitignore
+   
+  {Disclaimer: There may still be cases where you do need to edit these files}
+   
  
- 4. explain left sidebar directories and files
+ 4. The remaining items in the left-hand sidebar are either crucial to the code/operation of the MakeBot or are important reference documents.
+ 
+  -The items beginning with 'skills/' are related to the functions of the MakeBot, what it can and cannot do while interacting in the Slack Workspace. Each of these files should have a comment at the top, explaining the function/purpose of the item. 
+    Important 'skill/' items for basic function editing:
+    -hello.js: script for responding to greetings
+    -help.js: script providing the abilities of the MakeBot to the user
+    -interest_videos: script polling user for their area of interest and providing relevant video content
+    -join_different_slack: script proving the user with links to join the MakeHaven slack or to the slack homepage.
+    -meet_with_JR: script provides a link to calendar of JR's availability and which provides ease of scheduling
+    -see_volunteer_calendar: script provides user with a link to buy a 
+    
+    
+  
+  
+  
  
  5. explain user process for makebot
+ There are 6 tasks the makebot is capable of doing. 
+ 
+ Provide a link to an online waiver. 
+Provide a link to MakeHaven's  member orientation video.
+Provide a link to schedule a meeting for key pickup
+Identify area of interest (3D printing, laser cutting, woodworking).
+Watch tool orientation video (also found on YouTube).
+Schedule meeting with volunteer coordinator for tool to be approved for use.
  
  
  Reminder
