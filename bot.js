@@ -84,7 +84,7 @@ if (process.env.MONGO_URI) {
 // Create the Botkit controller, which controls all instances of the bot.
 var controller = Botkit.slackbot(bot_options);
 
-console.log('controller starting to tick');
+
 controller.startTicking();
 
 // Set up an Express-powered webserver to expose oauth and webhook endpoints
@@ -142,7 +142,7 @@ if (!process.env.clientId || !process.env.clientSecret) {
   // You can tie into the execution of the script using the functions
   // controller.studio.before, controller.studio.after and controller.studio.validate
   if (process.env.studio_token) {
-      controller.on('direct_message,message,direct_mention,mention', function(bot, message) {
+      controller.on('direct_message,direct_mention,mention', function(bot, message) {
           controller.studio.runTrigger(bot, message.text, message.user, message.channel, message).then(function(convo) {
               if (!convo) {
                   // no trigger was matched
