@@ -1,21 +1,20 @@
 module.exports = function(controller) {
+ controller.hears(['help'], 'direct_message,direct_mention', function(bot, message) {
 
 
-    // This before middleware allows the help command to accept sub-thread names as a parameter
-    // so users can say help to get the default thread, but help <subthread> will automatically
-    // jump to that subthread (if it exists)
-    controller.studio.before('help', function(convo, next) {
+     bot.startConversation(message, function(err, convo) {
+            convo.say('Hello there! To sign online waiver, type: sign waiver \n');
+            convo.say('To watch our orientation video, type: watch orientation \n');
+            convo.say('To schedule key pickup, type: key pickup \n');
+            convo.say('To identify your area(s) of interest, type: interest \n');
+            convo.say('To request tool approval, type: approval')
+            // https://api.slack.com/methods/reminders.add
+               
+          
+            convo.next();
+                      
+               
+        });  
 
-        // is there a parameter on the help command?
-        // if so, change topic.
-        if (matches = convo.source_message.text.match(/^help (.*)/i)) {
-            if (convo.hasThread(matches[1])) {
-                convo.gotoThread(matches[1]);
-            }
-        }
-
-        next();
-
-    });
-
+     });  
 }
