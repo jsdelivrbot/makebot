@@ -38,36 +38,53 @@ Authorization Link
    - All items beginning: sass/
    - All items beginning: views/
    - .gitignore
+   -glitch_readme.md: a explanation file that no longer applies to the App workflow structure
    
   {Disclaimer: There may still be cases where you do need to edit these files}
    
  
  4. The remaining items in the left-hand sidebar are either crucial to the code/operation of the MakeBot or are important reference documents.
  
-  -The items beginning with 'skills/' are related to the functions of the MakeBot, what it can and cannot do while interacting in the Slack Workspace. Each of these files should have a comment at the top, explaining the function/purpose of the item. 
-    Important 'skill/' items for basic function editing:
-    -hello.js: script for responding to greetings
-    -help.js: script providing the abilities of the MakeBot to the user
-    -interest_videos: script polling user for their area of interest and providing relevant video content
-    -join_different_slack: script proving the user with links to join the MakeHaven slack or to the slack homepage.
-    -meet_with_JR: script provides a link to calendar of JR's availability and which provides ease of scheduling
-    -see_volunteer_calendar: script provides user with a link to buy a 
+  -The items beginning with 'skills/' are related to the functions of the MakeBot, what it can and cannot do        while interacting in the Slack Workspace. Each of these files should have a comment at the top, explaining      the function/purpose of the item. 
+  -Important 'skill/' items for basic function editing:
+  -hello.js: script for responding to greetings
+  -help.js: script providing the abilities of the MakeBot to the user -interest_videos: script polling user for      their area of interest and providing relevant video content
+  -join_different_slack: script proving the user with links to join the MakeHaven slack or to the slack              homepage.     
+  -meet_with_JR: script provides a link to calendar of JR's availability and which provides ease of scheduling
+  -see_volunteer_calendar: script provides user with a link to view availability calendar of volunteers in          order to schedule tool approval sessions
+  -sign_waiver: provides user with a link to the waiver
+  -watch_orientation: provides a link to view the mandatory MakeHaven orientation YouTube video    
+  -The item with a *key icon*.env is a sensitive information file, which should not be shown to anyone outisde      of this app. With this information they coul hack into and take control of the app and therefore the slack      workspace 
+  -MakeHaven.txt: a copy of this document, explaining how to use this latest cauliflower drying
     
-    
-  
-  
-  
+  -App.json and package.json: tools to use to send informational messages in another format (not HTML)
+  -bot.js: contains executable code for that MakeBot or any other bot created by the MakeBot app
+  -readme.md: 
+
  
  5. explain user process for makebot
- There are 6 tasks the makebot is capable of doing. 
  
- Provide a link to an online waiver. 
-Provide a link to MakeHaven's  member orientation video.
-Provide a link to schedule a meeting for key pickup
-Identify area of interest (3D printing, laser cutting, woodworking).
-Watch tool orientation video (also found on YouTube).
-Schedule meeting with volunteer coordinator for tool to be approved for use.
- 
+There are 6 tasks the makebot is capable of doing. 
+  
+#1 Provide a link to an online waiver. 
+#2 Provide a link to MakeHaven's  member orientation video.
+#3 Provide a link to schedule a meeting for key pickup.
+#4 Identify area of interest (3D printing, laser cutting, woodworking).
+#5 Watch tool orientation video (also found on YouTube).
+#6 Provide a link to schedule meeting with volunteer coordinator for tool to be approved for use.
+
+#1 Provide a link to an online waiver.
+If the user direct messages 'waiver' or 'sign waiver' to MakeBot, MakeBot
+will reply with a link to MakeHaven's mandatory online waiver.
+
+#2 Provide a link to MakeHaven's member orientation video.
+All MakeHaven members are required to watch a specific MakeHaven video as part of the orientation process. By typing 'watch', 'watch orientation', or 'watch orientation video' in a direct message to MakeBot, MakeBot will reply with the link to watch the youtube video directly in slack or on the youtube website. 
+
+#3 Provide a link to schedule a meeting for key pickup.
+After users type 'key', 'pickup', 'key pickup', or 'meet JR' in a direct message to MakeBot, Makebot will respond with a link to a calendly meeting planner where the user can schedule a meeting with JR to pick up their key and get their photo taken.
+
+#4
+After users type 'interest' in a direct message to MakeBot, MakeBot will present the user with three potential areas of interest. If the user rep
  
  Reminder
  
