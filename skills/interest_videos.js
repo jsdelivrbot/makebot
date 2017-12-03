@@ -22,11 +22,13 @@ module.exports = function(controller) {
                     convo.say('Here are some awesome laser cutting videos that might be helpful:\n');
                     convo.say('https://www.youtube.com/watch?v=4TaAvGx8crc \n');
                     convo.say('https://www.youtube.com/watch?v=jO7bVcIew-w \n');
+                    convo.next();
                   }
                   else if(response.text == '2'){
                     convo.say('Cool, I like #D printing too!');
                     convo.say('Here is a great 3D printing video that you might enjoy:\n');
                     convo.say('https://www.youtube.com/watch?v=Sc1SwWCKy4c \n');
+                    convo.next();
                   }
                   else if(response.text == '3'){
                     convo.say('Cool, I like woodworking too!');
@@ -34,15 +36,16 @@ module.exports = function(controller) {
                     convo.say('https://www.youtube.com/watch?v=iEkYFWndn9g -Get yourself oriented in the wood shop!\n');
                     convo.say('https://www.youtube.com/watch?v=yVvgFxSidic -Learn the ins and outs of hand planing!\n');
                     convo.say('https://www.youtube.com/watch?v=LHeVOy5B9ds -Watch the formation of a wooden handheld game console! \n');
+                    convo.next();
                   }
                   else{
                     convo.say('Not a valid option, please type @YHackBot interest to restart sequence');
+                    convo.next();
                   }
               
 
               });
                       
-              convo.next();
                
         });  
             
