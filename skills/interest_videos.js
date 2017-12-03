@@ -20,9 +20,9 @@ module.exports = function(controller) {
                   if(response.text == '1'){
                     convo.say('Cool, I like laser cutting too!');
                     convo.say('Here are some awesome laser cutting videos that might be helpful:\n');
-                    convo.say('Learn the basics of laser cutting\n https://www.youtube.com/watch?v=4TaAvGx8crc\n');
-                    convo.say('Time lapse of laser cutting project\n https://www.youtube.com/watch?v=jO7bVcIew-w\n');
-                    convo.say('Here you can get your laser cutting badge\n https://www.makehaven.org/badges/laser-cutter\n')
+                    convo.say('Learn the basics of laser cutting\n https://www.youtube.com/watch?v=4TaAvGx8crc \n');
+                    convo.say('Time lapse of laser cutting project\n https://www.youtube.com/watch?v=jO7bVcIew-w \n');
+                    convo.say('Here you can get your laser cutting badge\n https://www.makehaven.org/badges/laser-cutter \n')
                     convo.next();
                   }
                   else if(response.text == '2'){
@@ -36,7 +36,7 @@ module.exports = function(controller) {
                     convo.say('These woodworking videos are a perfect place to start your next project:\n');
                     convo.say('Get yourself oriented in the wood shop!\n https://www.youtube.com/watch?v=iEkYFWndn9g \n');
                     convo.say('Learn the ins and outs of hand planing!\n https://www.youtube.com/watch?v=yVvgFxSidic \n');
-                    convo.say('Watch the formation of a wooden handheld game console!\n https://www.youtube.com/watch?v=LHeVOy5B9ds ');
+                    convo.say('Watch the formation of a wooden handheld game console!\n https://www.youtube.com/watch?v=LHeVOy5B9ds \n');
                     convo.next();
                   }
                   else{
