@@ -15,6 +15,7 @@ module.exports = function(controller) {
         // for example, set variables to be used in the message templates
         // convo.setVar('foo','bar');
 
+
         console.log('BEFORE: onboarding');
         // don't forget to call next, or your conversation will never continue.
         next();
@@ -36,7 +37,7 @@ module.exports = function(controller) {
         // convo.setVar('name','value');
 
         console.log('In the script *onboarding*, about to start the thread *default*');
-
+         convo.say("welcome to hackbot2!");
         // always call next!
         next();
     });
@@ -46,6 +47,7 @@ module.exports = function(controller) {
 
         /// do something fun and useful
         // convo.setVar('name','value');
+        convo.say("welcome to hackbot2! &&");
 
         console.log('In the script *onboarding*, about to start the thread *timeout*');
 
@@ -59,6 +61,8 @@ module.exports = function(controller) {
     // you may define multiple after hooks. they will run in the order they are defined.
     // See: https://github.com/howdyai/botkit/blob/master/docs/readme-studio.md#controllerstudioafter
     controller.studio.after('onboarding', function(convo, next) {
+        
+      
 
         console.log('AFTER: onboarding');
 
