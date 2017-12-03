@@ -9,9 +9,8 @@ module.exports = function(controller) {
     controller.hears(['key pickup', 'key', 'pickup', 'meet JR'], 'direct_message,direct_mention', function(bot, message) {
 
         bot.startConversation(message, function(err, convo) {
-            convo.say('Click the link to visit the Key Pickup Calendar and schedule a time to pick up your ID key \n');
-            convo.say('https://calendly.com/jrlogan/new-member/ \n');
-               
+            convo.say('Click the link to visit the Key Pickup Calendar and schedule a time to pick up your ID key: \nhttps://calendly.com/jrlogan/new-member/ \n');
+                         
           
             convo.next();
                       
