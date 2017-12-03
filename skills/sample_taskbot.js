@@ -23,7 +23,7 @@ module.exports = function(controller) {
     // listen for someone saying 'tasks' to the bot
     // reply with a list of current tasks loaded from the storage system
     // based on this user's id
-    controller.hears(['tasks','todo'], 'direct_message', function(bot, message) {
+    controller.hears(['tasks','todo'], 'direct_message,direct_mention,mention', function(bot, message) {
 
         // load user from storage...
         controller.storage.users.get(message.user, function(err, user) {
@@ -78,7 +78,7 @@ module.exports = function(controller) {
     });
 
     // listen for a user saying "done <number>" and mark that item as done.
-    controller.hears(['done (.*)'],'direct_message', function(bot, message) {
+    controller.hears(['done (.*)'],'direct_message, direct_mention', function(bot, message) {
 
         var number = message.match[1];
 
