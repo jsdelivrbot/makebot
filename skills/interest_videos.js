@@ -14,22 +14,7 @@ module.exports = function(controller) {
         bot.startConversation(message, function(err, convo) {
             convo.say('1: Laser cutting \n2: 3D printing \n3: Woodworking');
             // https://api.slack.com/methods/reminders.add
-          /*
-          {
-    "ok": true,
-    "reminder": {
-        "id": "Rm12345678",
-        "creator": "U18888888",
-        "user": "U18888888",
-        "text": "eat a banana",
-        "recurring": false,
-        "time": 1602288000,
-        "complete_ts": 0
-    }
-}
-          */
-            
-          
+               
           
             convo.reminders.add()
             convo.ask('Choose an area of interest by typing 1, 2, or 3.\n', function(response, convo){
