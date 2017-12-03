@@ -1,13 +1,17 @@
 /*
  *
- * THIS FILE CONTAINS ALL MAKEHAVEN SPECIFIC DOCUMENTATION
+ * THIS FILE CONTAINS ALL MAKEHAVEN SPECIFIC DOCUMENTATION AND A BRIEF GLITCH TUTORIAL
  *
  */
  
  to do:
  readme
  
- 1. sequence of steps for use-only installation
+Authorization Link
+ https://slack.com/oauth/authorize?client_id=280783240052.281964108791&scope=bot,channels:write,groups:write,im:write,channels:history,groups:history,im:history,mpim:history
+ 
+ 1. sequence of steps for use-only installation:
+ Owner of a workspace must click on Authorization Link, approve MakeBot, and sign-in to his workspace. Once he sign-ins, he must select 'Manage Apps' from the top-left dropdown in Slack. After being redirected to an api.slack.com site, MakeBot will appear in the list of restricted apps. The owner must click the approve button in the MakeBot entry
  
  2. 
     To edit the MakeBot (in glitch) follow this link: 
@@ -19,7 +23,12 @@
     If either of these links seems to not be working, click the share button in  the upper-left hand corner of the glitch consol, and replace with the links  there, obtained by clicking the 'copy' button next to the desired link/link function.
        
  
- 3. explain scripts
+ 3. The left-hand sidebar of the Glitch workspace has a scroll-able list of files and directories pertaining to the MakeBot. The following is a list of files that you will likely not need to change unless you are doing in-depth restructuring or reformatting of the code/workspace. (In that case we recommend learning how to do that with a reputable source)
+ 
+   - All items beginning: /components
+   - All items beginning: /public
+   - All items beginning: /docs
+   -
  
  4. explain left sidebar directories and files
  

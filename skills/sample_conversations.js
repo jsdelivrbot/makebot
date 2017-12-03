@@ -1,7 +1,5 @@
 /*
 
-WHAT IS THIS?
-
 This module demonstrates simple uses of Botkit's conversation system.
 
 In this example, Botkit hears a keyword, then asks a question. Different paths
