@@ -69,6 +69,7 @@ module.exports = function(controller) {
         // handle the outcome of the convo
         if (convo.successful()) {
 
+
             var responses = convo.extractResponses();
             // do something with the responses
 
