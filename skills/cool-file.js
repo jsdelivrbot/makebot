@@ -37,7 +37,7 @@ module.exports = function(controller) {
         // convo.setVar('name','value');
 
         console.log('In the script *onboarding*, about to start the thread *default*');
-         convo.say("welcome to hackbot2!");
+
         // always call next!
         next();
     });
@@ -47,7 +47,7 @@ module.exports = function(controller) {
 
         /// do something fun and useful
         // convo.setVar('name','value');
-        convo.say("welcome to hackbot2! &&");
+
 
         console.log('In the script *onboarding*, about to start the thread *timeout*');
 
