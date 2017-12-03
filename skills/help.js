@@ -3,7 +3,7 @@ module.exports = function(controller) {
 
 
      bot.startConversation(message, function(err, convo) {
-            convo.say('Hello there! To sign online waiver, type: sign waiver \n');
+            convo.say('Hello there! \n To sign online waiver, type: sign waiver \n');
             convo.say('To watch our orientation video, type: watch orientation \n');
             convo.say('To schedule key pickup, type: key pickup \n');
             convo.say('To identify your area(s) of interest, type: interest \n');
