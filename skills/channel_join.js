@@ -1,5 +1,5 @@
 var debug = require('debug')('botkit:channel_join');
-var message;
+
 
 
 module.exports = function(controller) {

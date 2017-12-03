@@ -9,7 +9,7 @@ through the conversation are chosen based on the user's response.
 
 module.exports = function(controller) {
 
-    controller.hears(['interest'], 'direct_message,direct_mention', function(bot, message) {
+    controller.hears(['interest', 'tool'], 'direct_message,direct_mention', function(bot, message) {
 
         bot.startConversation(message, function(err, convo) {
             convo.say('1: Laser cutting \n2: 3D printing \n3: Woodworking');
@@ -40,7 +40,7 @@ module.exports = function(controller) {
                     convo.next();
                   }
                   else{
-                    convo.say('Not a valid option, please type @YHackBot interest to restart sequence');
+                    convo.say('Not a valid option. To restart sequence, please type: interest');
                     convo.next();
                   }
               
