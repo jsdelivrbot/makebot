@@ -4,15 +4,33 @@
  *
  */
  
+ to do:
+ fallback
+ readme
+ 
  1. sequence of steps for use-only installation
  
- 2. steps for editing (botkit and glitch)
+ 2. To edit the MakeBot (in glitch) follow this link: 
+       https://glitch.com/edit/#!/join/181637a9-b6a8-49d8-a5a8-572eaea48cf8
+       
+    To simply view the Makebot in glitch without editing access and ability to     view secret information in the .env file etc.:
+       https://glitch.com/edit/#!/makebot
+       
  
  3. explain botkit scripts (mauricio) modify and call
  
  4. explain left sidebar directories and files
  
  5. explain user process for makebot
+ 
+ 
+ Reminder
+ 
+/remind 
+#channelname 
+“To see our upcoming events visit https://www.eventbrite.com/o/makehaven-9268848926 To see our instructional videos visit https://www.youtube.com/channel/UCLNtx8aVbTt9Ncm3vzGntNQ/videos” 
+every Monday
+ 
  
  6. suggestions for optimization
   
